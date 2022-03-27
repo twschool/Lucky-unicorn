@@ -1,10 +1,9 @@
-"""LU Yes / No
-Simplifies the input by converting it to lower case. Also accepts
-y or n as abbreviations. Prints result of user choice as well as input - For testing
-"""
+"""Took function from component yes_no checker as the basis for this
+new function which incorporates both yes/no and show instructions"""
 
 
 # The function loops until an answer of yes or no has been given
+# Yes/no checking function
 def yes_no_func(response):
     # If they say yes then skip and output "Program continues"
     if response == "Y" or response == "YES":
@@ -24,20 +23,23 @@ def yes_no_func(response):
         return [True, ""]
 
 
+# Function to display instructions
+def show_instructions():
+    print("**** How to play ****")
+    print()
+    print("The rules of the game will go here")
+    print()
+    print("Program continues")
+    print()
+
+
 # Main routine
 looping = [True, ""]
 response_ = ""
+played_before = ""
 while looping[0] is not False:
     response_ = input("Have you played this game before? : ").upper()
     looping = yes_no_func(response_)
-if looping[1] == "No":
-    looping[0] = True
-    while looping[0] is not False:
-        response_ = input("Are you having fun? : ").upper()
-        looping = yes_no_func(response_)
-    if looping[1] == "No":
-        print("That's bad")
-    else:
-        print("Good")
-elif looping[1] == "Yes":
-    print("We have a regular")
+    played_before = looping[1]
+if played_before == "No":
+    show_instructions()
