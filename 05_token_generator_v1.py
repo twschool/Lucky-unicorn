@@ -1,5 +1,7 @@
 """Component 3 (random token) v1
-Generates random choice of token in random order"""
+Generates random choice of token in random order 100
+times to fine tune the percentage chance
+of winning so the house wins most of the time"""
 import random
 
 
