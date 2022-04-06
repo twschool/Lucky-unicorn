@@ -44,7 +44,7 @@
       <recent name="C:\Users\Thoma\OneDrive - Middleton Grange School\2022\# Computer Science\AS91879 (1.7) Programming\Exercises\Lucky unicorn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.05_token_generator_v2">
+  <component name="RunManager" selected="Python.LU_base_v1">
     <configuration name="04_how_much_v1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Lucky unicorn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,9 +152,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.05_token_generator_v2" />
-        <item itemvalue="Python.05_token_generator_v1" />
         <item itemvalue="Python.LU_base_v1" />
+        <item itemvalue="Python.05_token_generator_v1" />
+        <item itemvalue="Python.05_token_generator_v2" />
         <item itemvalue="Python.04_how_much_v1" />
         <item itemvalue="Python.instructions_v1" />
       </list>

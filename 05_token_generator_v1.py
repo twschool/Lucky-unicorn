@@ -16,7 +16,9 @@ def token_generator():
             money = money - 0.5
         else:
             money = money - 1
-        print(money)
+        print(f"Token: {token_choice}\n${money}")
+    print(f"Starting balance $100\n"
+          f" Final balance ${money}")
 
 
 

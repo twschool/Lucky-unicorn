@@ -1,6 +1,8 @@
 """LU base component
 Components added after they have been created and tested"""
 
+import random
+
 
 # The function loops until an answer of yes or no has been given
 # Yes/no checking function
@@ -45,6 +47,30 @@ def show_instructions():
     print()
 
 
+def token_generator(money):
+    loop = True
+    while loop is True:
+        if money <= 0:
+            return True
+        token = ["Horse", "Donkey", "Unicorn", "Zebra", "Zebra", "Donkey", "Horse", "Zebra", "Donkey", "Horse"]
+        token_choice = random.choice(token)
+        if token_choice == "Unicorn":
+            money = money + 4
+        elif token_choice == "Horse" or token_choice == "Donkey":
+            money = money - 0.5
+        else:
+            money = money - 1
+        if money <= 0:
+            return True
+        quitting = input(f"You have ${money} left would you\n"
+                         f"like to continue (Y)es or (N)o").upper()
+        if quitting == "N" or quitting == "NO":
+            print(f"You finished with ${money}")
+            return False
+        elif quitting == "Y" or quitting == "YES":
+            print("Continuing")
+
+
 # Main routine
 looping = [True, ""]
 response_ = ""
@@ -57,3 +83,8 @@ if played_before == "No":
     show_instructions()
 user_balance_ = number_checker("How much would you like to play with? $", 1, 10)
 print(f"You are playing with ${user_balance_}")
+force_quit = token_generator(user_balance_)
+if force_quit is True:
+    exit("You ran out of money")
+elif force_quit is False:
+    exit("Exited Session")
