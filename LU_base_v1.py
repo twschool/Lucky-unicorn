@@ -61,7 +61,7 @@ def token_generator(money):
         if token_choice == "Unicorn":
             money = money + 4
         # if the token is a horse or a donkey 50c is added to the users balance
-        elif token_choice == "Horse" or token_choice == "Donkey":
+        elif token_choice == "Horse" or token_choice == "Zebra":
             money = money - 0.5
         # if the token is not either above then the token must be a zebra
         # if the token is a zebra 1$ is taken away from the user

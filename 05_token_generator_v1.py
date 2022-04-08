@@ -12,7 +12,7 @@ def token_generator():
         token_choice = random.choice(token)
         if token_choice == "Unicorn":
             money = money + 4
-        elif token_choice == "Horse" or token_choice == "Donkey":
+        elif token_choice == "Horse" or token_choice == "Zebra":
             money = money - 0.5
         else:
             money = money - 1

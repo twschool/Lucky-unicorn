@@ -14,7 +14,7 @@ def token_generator(money):
         token_choice = random.choice(token)
         if token_choice == "Unicorn":
             money = money + 4
-        elif token_choice == "Horse" or token_choice == "Donkey":
+        elif token_choice == "Horse" or token_choice == "Zebra":
             money = money - 0.5
         else:
             money = money - 1
@@ -36,6 +36,6 @@ def token_generator(money):
 money_ = int(input("Temporary money question prompt\nHow much money do you want to put in: "))
 force_quit = token_generator(money_)
 if force_quit is True:
-    exit("You ran out of money")
+    exit("Exited Session")
 elif force_quit is False:
     exit("Exited Session")
