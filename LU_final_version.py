@@ -1,5 +1,5 @@
-"""LU base component - based on LU_base_v2
-Adding instructions to instructions function and further text decoration
+"""LU final version based on LU-base_v3
+Final version of project
 """
 
 import random
@@ -73,6 +73,7 @@ def token_generator(money):
         print(formatter(".", f"Round {round_number}"))
         print()
         # Random list off tokens that the random function chooses from
+        # I wrote my own code for this so that is why it's not a random number from 0-100 choosing
         token = ["Horse", "Horse", "Horse", "Horse", "Horse",
                  "Donkey", "Donkey", "Donkey", "Donkey", "Donkey",
                  "Zebra", "Zebra", "Zebra", "Zebra", "Zebra",

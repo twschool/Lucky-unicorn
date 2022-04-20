@@ -8,7 +8,10 @@ import random
 def token_generator():
     money = 100
     for num in range(0, 100):
-        token = ["Horse", "Donkey", "Unicorn", "Zebra", "Zebra", "Donkey", "Horse", "Zebra", "Donkey", "Horse"]
+        token = ["Horse", "Horse", "Horse", "Horse", "Horse",
+                 "Donkey", "Donkey", "Donkey", "Donkey", "Donkey",
+                 "Zebra", "Zebra", "Zebra", "Zebra", "Zebra",
+                 "Unicorn"]
         token_choice = random.choice(token)
         if token_choice == "Unicorn":
             money = money + 4
